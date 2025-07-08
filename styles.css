@@ -59,6 +59,34 @@ button {
   transform: scale(0.8);
 }
 
+.link__hover-effect {
+  position: relative;
+}
+
+.link__hover-effect:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 3px;
+  width: 0;
+  right: 0;
+  background-color: #2c6e49;
+  transition: all 300ms ease;
+}
+
+.link__hover-effect--white:after {
+  background-color: #ffffef;
+}
+
+.link__hover-effect--green:after {
+  color: #2c6e49;
+}
+
+.link__hover-effect:hover:after {
+  left: 0;
+  width: 100%;
+}
+
 /* 
 
 NAVIGATION
@@ -211,7 +239,7 @@ Projects
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #2e2d4d;
+  background-color: #2c6e49;
   opacity: 0;
   transition: opacity 300ms ease-in-out;
 }
@@ -282,39 +310,38 @@ Projects
   text-decoration: none;
 }
 
-
 /* 
 
 Footer
 
  */
 
- footer {
-    background-color: #2c6e49;
-    display: flex;
- }
+footer {
+  background-color: #2c6e49;
+  display: flex;
+}
 
- .footer__row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
- }
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
- .footer__logo--img {
-    width: 150px;
- }
+.footer__logo--img {
+  width: 150px;
+}
 
- .footer__social--list {
-    width: 100%;
-    max-width: 500px;
-    display: flex;
-    justify-content: space-around;
-    margin: 0 0 24px 0;
- }
+.footer__social--list {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 24px 0;
+}
 
- .footer__social--link, 
- .footer__copyright {
-    color: #ffffef;
-    text-decoration: none;
- }
+.footer__social--link,
+.footer__copyright {
+  color: #ffffef;
+  text-decoration: none;
+}
