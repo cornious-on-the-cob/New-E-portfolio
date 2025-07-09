@@ -111,15 +111,20 @@
         <h3 class="modal__title">Here's a bit about me.</h3>
         <h4 class="modal__subtitle">Aspiring front-end Developer</h4>
         <p class="modal__para">
-          I’m Lorea — a 20 year old <b class="green">aspiring front-end developer</b> and designer
-          passionate about crafting <b class="green">vibrant, responsive websites</b>. I combine
-          <b class="green">clean, modern code</b> with <b class="green">thoughtful UI/UX design</b> to create digital
-          experiences that are as beautiful as they are functional. <br>
-          For my first client project, <b class="green">I designed and built a full multi-page website</b> for a
-          Savannah bed & breakfast using HTML, CSS, and JavaScript. Now I’m
-          growing my skills in JavaScript and UI design, with plans to dive into
-          game development next. I’m ready to bring <b class="green">creativity, technical skill,
-          and fresh ideas</b> to your team.
+          I’m Lorea — a 20 year old
+          <b class="green">aspiring front-end developer</b> and designer
+          passionate about crafting
+          <b class="green">vibrant, responsive websites</b>. I combine
+          <b class="green">clean, modern code</b> with
+          <b class="green">thoughtful UI/UX design</b> to create digital
+          experiences that are as beautiful as they are functional. <br />
+          For my first client project,
+          <b class="green">I designed and built a full multi-page website</b>
+          for a Savannah bed & breakfast using HTML, CSS, and JavaScript. Now
+          I’m growing my skills in JavaScript and UI design, with plans to dive
+          into game development next. I’m ready to bring
+          <b class="green">creativity, technical skill, and fresh ideas</b> to
+          your team.
         </p>
         <div class="modal__languages">
           <figure class="modal__language">
@@ -128,7 +133,7 @@
               alt=""
               class="modal__language--img"
             />
-          <span class="language__name">HTML</span>
+            <span class="language__name">HTML</span>
           </figure>
           <figure class="modal__language">
             <img
@@ -136,7 +141,7 @@
               alt=""
               class="modal__language--img"
             />
-          <span class="language__name">CSS</span>
+            <span class="language__name">CSS</span>
           </figure>
           <figure class="modal__language">
             <img
@@ -144,7 +149,7 @@
               alt=""
               class="modal__language--img"
             />
-          <span class="language__name">JavaScript</span>
+            <span class="language__name">JavaScript</span>
           </figure>
           <figure class="modal__language">
             <img
@@ -152,17 +157,39 @@
               alt=""
               class="modal__language--img"
             />
-          <span class="language__name">React</span>
+            <span class="language__name">React</span>
           </figure>
         </div>
       </div>
 
       <div class="modal__half modal__contact">
-        <h3 class="modal__title">Let's have a chat!</h3>
-        <h4 class="modal__subtitle modal__white">
-          I'm currently open to new opportunities
-        </h4>
+        <h3 class="modal__title modal__white">Let's have a chat.</h3>
+        <h4 class="modal__subtitle modal__white">I'd love to hear from you!</h4>
+        <form id="contact__form">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" required />
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">E-mail</label>
+            <input class="input" name="user_email" type="email" required />
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea name="message" class="input" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">
+            Send it my way
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fa-solid fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message. Looking forward to speaking to you soon!
+        </div>
       </div>
+      <i class="fa-solid fa-xmark modal__exit click"></i>
     </div>
 
     <section id="projects">
