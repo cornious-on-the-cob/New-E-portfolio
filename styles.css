@@ -409,6 +409,11 @@ Modal
   font-weight: bold;
   text-align: center;
   padding: 50px;
+  z-index: -1;
+}
+
+.modal__overlay--visible {
+  z-index: 1;
 }
 
 .modal__exit {

@@ -10,6 +10,17 @@
       src="https://kit.fontawesome.com/a118cfdbd0.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "nLaV8cYYoxuPCiW8E",
+        });
+      })();
+    </script>
   </head>
   <body>
     <section id="landing__page">
@@ -165,18 +176,23 @@
       <div class="modal__half modal__contact">
         <h3 class="modal__title modal__white">Let's have a chat.</h3>
         <h4 class="modal__subtitle modal__white">I'd love to hear from you!</h4>
-        <form id="contact__form">
+        <form id="contact__form" onsubmit="contact(event)">
           <div class="form__item">
             <label class="form__item--label">Name</label>
-            <input class="input" name="user_name" type="text" required />
+            <input class="input" name="user_name" type="text" required/>
           </div>
           <div class="form__item">
             <label class="form__item--label">E-mail</label>
-            <input class="input" name="user_email" type="email" required />
+            <input class="input" name="user_email" type="email" required/>
           </div>
           <div class="form__item">
             <label class="form__item--label">Message</label>
-            <textarea name="message" class="input" type="text" required></textarea>
+            <textarea
+              name="message"
+              class="input"
+              type="text"
+              required
+            ></textarea>
           </div>
           <button id="contact__submit" class="form__submit">
             Send it my way
