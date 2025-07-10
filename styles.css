@@ -150,7 +150,17 @@ NAVIGATION
   height: 100px;
 }
 
+.red__logo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  visibility: hidden;
+  opacity: 1;
+  left: 20px;
+}
+
 nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -176,6 +186,73 @@ nav {
 
 .fa-circle-half-stroke {
   font-size: 20px;
+}
+
+/* 
+
+Dark Theme
+
+ */
+
+.dark-theme .title,
+.dark-theme .section__title,
+.dark-theme .section__title,
+.dark-theme .nav__link--anchor,
+.dark-theme .fa-circle-half-stroke,
+.dark-theme .header__para {
+  color: #ffffef;
+}
+
+.dark-theme .green {
+  color: #bb8588;
+}
+
+.dark-theme .scroll__icon {
+  border: 2px solid #bb8588;
+}
+
+.dark-theme .scroll__icon:after {
+  background-color: #bb8588;
+}
+
+.dark-theme .mail__btn,
+.dark-theme .link__hover-effect--green:after,
+.dark-theme .header__link {
+  background-color: #bb8588;
+}
+
+.dark-theme section,
+.dark-theme .link__hover-effect--white:after {
+  background-color: #3c1518;
+}
+
+.dark-theme .red__logo {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dark-theme .logo,
+.dark-theme .footer__logo--img {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dark-theme .footer__social--link,
+.dark-theme .footer__copyright {
+  color: #3c1518;
+}
+
+.dark-theme footer {
+  background-color: #ffffef;
+}
+
+.dark-theme .red__logo--footer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dark-theme .project__wrapper--bg {
+  background-color: #bb8588;
 }
 
 /* 
@@ -575,6 +652,14 @@ footer {
 
 .footer__logo--img {
   width: 150px;
+}
+
+.red__logo--footer {
+  position: absolute;
+  left: 44.7%;
+  width: 150px;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .footer__social--list {
