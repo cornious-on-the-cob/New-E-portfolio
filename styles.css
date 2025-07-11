@@ -675,3 +675,60 @@ footer {
   color: #ffffef;
   text-decoration: none;
 }
+
+/*
+
+ shapes
+
+ */
+
+.shape {
+  position: fixed;
+  height: 40px;
+}
+
+.shape--0 {
+  top: 20vh;
+  left: 5vw;
+}
+
+.shape--1 {
+  top: 20vh;
+  left: 50vw;
+}
+
+.shape--2 {
+  top: 20vh;
+  left: 90vw;
+}
+
+.shape--3 {
+  top: 50vh;
+  left: 5vw;
+}
+
+.shape--4 {
+  top: 50vh;
+  left: 50vw;
+  visibility: hidden;
+}
+
+.shape--5 {
+  top: 50vh;
+  left: 90vw;
+}
+
+.shape--6 {
+  top: 80vh;
+  left: 5vw;
+}
+
+.shape--7 {
+  top: 80vh;
+  left: 50vw;
+}
+
+.shape--8 {
+  top: 80vh;
+  left: 90vw;
+}
