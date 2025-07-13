@@ -559,6 +559,10 @@ Projects
 
  */
 
+ .project {
+  padding-bottom: 24px;
+ }
+
 .project__wrapper--bg {
   position: absolute;
   top: 0;
